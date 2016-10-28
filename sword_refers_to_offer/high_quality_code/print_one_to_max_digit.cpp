@@ -1,7 +1,7 @@
 /*************************************************************************
     > File Name: print_one_to_max_digit.cpp
-    > Author: ma6174
-    > Mail: ma6174@163.com 
+    > Author: JTrancender
+    > Mail: jie-email@jie-trancender.org
     > Created Time: 2016年10月28日 星期五 13时00分14秒
  ************************************************************************/
 
