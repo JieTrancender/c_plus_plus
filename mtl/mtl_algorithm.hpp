@@ -1,5 +1,7 @@
 #pragma once
 
+#include <algorithm>
+
 namespace mtl
 {
 	template <typename Output, typename Size, typename T>
@@ -49,7 +51,7 @@ namespace mtl
 			if (*first2 < *first1)
 				return false;
 		}
-		return (first1 == last1) && (first2 != last2)	//because of operator <
+		return (first1 == last1) && (first2 != last2);	//because of operator <
 	}
 
 	template <typename InputIt1, typename InputIt2, typename Compare>
@@ -62,7 +64,7 @@ namespace mtl
 			if (comp(*first2, *first1))
 				return false;
 		}
-		return (first1 == last1) && (first2 != last2)
+		return (first1 == last1) && (first2 != last2);
 	}
 
 	template <typename InputIt1, typename InputIt2>

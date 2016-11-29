@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <memory>
 #include <iterator>
+#include <exception>
 
 namespace mtl
 {
@@ -149,14 +150,16 @@ namespace mtl
 		{
 			if (_n > _Nm)
 			{
-				std::throw out_of_range(_N("array::at"));
+                //throw std::out_of_range(_N("array::at"));
+                throw std::out_of_range("array::at");
 			}
 			return _AT_Type::_S_ref(_M_elems, _n);
 		}
 
 		constexpr const_reference at(size_type _n) const
 		{
-			return _n < _Nm ? _AT_Type::_S_ref(_M_elems, _n) : (std::throw_with_nested out_of_range(_N("array::at")), _AT_Type::_S_ref(_M_elems, 0));
+			//return _n < _Nm ? _AT_Type::_S_ref(_M_elems, _n) : (std::throw_with_nested out_of_range(_N("array::at")), _AT_Type::_S_ref(_M_elems, 0));
+            return _n < _Nm ? _AT_Type::_S_ref(_M_elems, _n) : (throw std::out_of_range("array::at"), _AT_Type::_S_ref(_M_elems, 0));
 		}
 
 		reference front()
