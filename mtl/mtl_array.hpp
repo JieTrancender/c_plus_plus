@@ -53,7 +53,8 @@ namespace mtl
 			//mtl::fill_n(begin(), size(), _u);
 			std::fill_n(begin(), size(), _u);
 		}
-
+		
+		//https://zh.cppreference.com/w/cpp/utility/declval
 		void swap(array& _other) noexcept(noexcept(swap(std::declval<_Tp&>(), std::declval<_Tp&>())))
 		{
 			std::swap_ranges(begin(), end(), _other.begin());
