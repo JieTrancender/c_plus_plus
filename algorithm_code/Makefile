@@ -13,4 +13,4 @@ max_subsequence: max_numof_sub_sequence.cpp
 	$c -o max_subsequence max_numof_sub_sequence.cpp
 
 clean:
-	rm -f a.out num_partition hanoi_tower find_location
+	rm -f a.out num_partition hanoi_tower find_location max_subsequence
