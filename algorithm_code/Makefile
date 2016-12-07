@@ -9,5 +9,8 @@ hanoi_tower: tower_of_hanoi.cpp
 find_location: find_location.cpp
 	$c -o find_location find_location.cpp
 
+max_subsequence: max_numof_sub_sequence.cpp
+	$c -o max_subsequence max_numof_sub_sequence.cpp
+
 clean:
 	rm -f a.out num_partition hanoi_tower find_location
