@@ -2,6 +2,7 @@
 *.gch
 
 *.make
+*.cmake
 *.includecache
 *.internal
 
