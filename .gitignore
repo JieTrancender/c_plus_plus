@@ -7,5 +7,6 @@
 
 CMakeCache.txt
 Makefile
-
 CMakeFiles
+
+._*
