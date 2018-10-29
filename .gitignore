@@ -1,13 +1,11 @@
-cpp_concurrency_in_action/share_data_between_threads/a.out
-cpp_concurrency_in_action/share_data_between_threads/simple_hierarchical_mutex.hpp.gch
+*/a.out
+*.gch
 
-sword_refers_to_offer/high_quality_code/a.out
+*.make
+*.includecache
+*.internal
 
-boost_code_project/chapter_two/a.out
-boost_code_project/chapter_two/test.txt
-boost_code_project/chapter_three/a.out
+CMakeCache.txt
+Makefile
 
-./nginx-1.4.4.tar.gz
-./nginx-1.4.4/*
-
-./nginx_module_develping/*.gch
+CMakeFiles
