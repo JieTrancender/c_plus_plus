@@ -12,3 +12,8 @@ CMakeFiles
 
 ._*
 .DS_Store
+
+lib/*
+test/*
+download/*
+CPP17-STL-Cookbook/*
